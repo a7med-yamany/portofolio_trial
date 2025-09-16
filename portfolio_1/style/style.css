@@ -1,0 +1,400 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+/* start nav bar */
+.navBarSec
+{
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 8px 3px;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    z-index: 99999;
+}
+.navLeft
+{
+    width: 30%;
+}
+.navLeft img
+{
+    width: 60px;
+}
+.navRight
+{
+    width: 70%;
+}
+.nav_links
+{
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+}
+.nav_links a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: all .7s ease-in-out;
+}
+.nav_links a:hover
+{
+    color: aqua;
+}
+
+/* start home page */
+#home
+{
+    background-image: url(../imgs/coding-difference-1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.home-bg
+{
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+.home-pg
+{
+    color: white;
+    z-index: 200;
+    padding: 20px;
+    text-align: center;
+    font-size: 170%;
+}
+.home-pg p
+{
+    margin: 20px 0px;
+}
+.home-pg button
+{
+    color: white;
+    padding: 7px 15px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1.5px solid aqua;
+    transition: all .7s ease-in-out;
+}
+.home-pg button:hover
+{
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+}
+
+/* start the about */
+#aboutMe
+{
+    width: 90%;
+    margin: 10px auto;
+}
+.allAbout
+{
+    display: flex;
+    justify-content: space-between;
+}
+.h2about
+{
+    text-align: center;
+    font-size: 170%;
+    text-shadow: 2px 2px 2px aqua;
+    margin: 20px 0px;
+}
+#aboutMe h4
+{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+#aboutMe h6
+{
+    font-size: 17px;
+    margin: 10px 0px;
+}
+
+/* education */
+.education
+{
+    width: 45%;
+}
+.education h3
+{
+    padding: 20px 20px 20px 0px;
+    font-size: 140%;
+}
+.education h3::after
+{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 5px;
+    background-color: aqua;
+    margin-top: 2px;
+    border-radius: 5px;
+}
+.eduData1
+{
+    width: 100%;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px 2px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all .7s ease-in-out;
+}
+.eduData1:hover
+{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+/* experience */
+.experience
+{
+    width: 45%;
+}
+.experience h3
+{
+    padding: 20px 20px 20px 0px;
+    font-size: 140%;
+}
+.experience h3::after
+{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 5px;
+    background-color: aqua;
+    margin-top: 2px;
+    border-radius: 5px;
+}
+.exper1
+{
+    width: 100%;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px 2px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all .7s ease-in-out;
+}
+.exper1:hover
+{
+    background-color: aqua;
+    cursor: pointer;
+}
+.p-years
+{
+    display: inline-block;
+    background-color: aqua;
+    border-radius: 20px;
+    padding: 3px 5px;
+    
+}
+
+/* skills */
+#skills
+{
+    width: 90%;
+    margin: 10px auto;
+}
+.all-skills
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.skill1
+{
+    width: 45%;
+    margin-bottom: 45px;
+}
+.skill-top
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+}
+.skill-bottom
+{
+    width: 100%;
+    height: 1%;
+    position: relative;
+}
+.skill-bottom::before
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 12px;
+    background-color: gray;
+    z-index: 20;
+    border-radius: 10px;
+}
+.skill1 .skill-bottom::after
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 90%;
+    height: 12px;
+    background-color: aqua;
+    z-index: 33;
+    border-radius: 10px;
+}
+
+.skill2
+{
+    width: 45%;
+    margin-bottom: 45px;
+}
+.skill2 .skill-bottom::after
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 90%;
+    height: 12px;
+    background-color: aqua;
+    z-index: 33;
+    border-radius: 10px;
+}
+.skill3
+{
+    width: 45%;
+    margin-bottom: 45px;
+}
+.skill3 .skill-bottom::after
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 12px;
+    background-color: aqua;
+    z-index: 33;
+    border-radius: 10px;
+}
+.skill4
+{
+    width: 45%;
+    margin-bottom: 45px;
+}
+.skill4 .skill-bottom::after
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 70%;
+    height: 12px;
+    background-color: aqua;
+    z-index: 33;
+    border-radius: 10px;
+}
+.skill5
+{
+    width: 45%;
+    margin-bottom: 45px;
+}
+.skill5 .skill-bottom::after
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 60%;
+    height: 12px;
+    background-color: aqua;
+    z-index: 33;
+    border-radius: 10px;
+}
+
+/* contacts */
+.contacts 
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.contacts img
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    width: 56px;
+    border: 2px solid black;
+}
+.contacts a
+{
+    border-radius: 15px;
+    margin: 0px 10px;
+    margin-bottom: 50px;
+    transition: all .7s ease-in-out;
+    /* border: 2px solid black; */
+}
+.contacts a:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+
+/* make the website responsive */
+
+@media  screen and (max-width: 991px) {
+    .allAbout
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .education, .experience
+    {
+        width: 90%;
+    }
+    .skill1, .skill2, .skill3, .skill4, .skill5
+    {
+        width: 90%;
+    }
+    .nav_links {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 10px; 
+    }
+    .nav_links a {
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        padding: 8px 0;
+    }
+    
+}
+
+@media screen and (max-width: 575px) {
+    .contacts
+    {
+        flex-direction: column;
+    }
+    
+    
+}
